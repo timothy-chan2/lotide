@@ -17,7 +17,7 @@ module.exports = {
   middle,
   countLetters,
   countOnly,
-  findKey: findKey,
+  findKey,
   findKeyByValue,
   letterPositions,
   map,
