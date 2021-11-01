@@ -1,7 +1,7 @@
 const assert = require('chai').assert;
 const middle = require('../middle');
 
-describe("#tail", () => {
+describe("#middle", () => {
   it("returns an empty array when array has only 1 element", () => {
     const arr = [1];
     assert.deepEqual(middle(arr), []);
