@@ -47,3 +47,7 @@ The following functions are currently implemented:
 *  `takeUntil(array, callback)` : Returns a slice of the array with elements taken from the beginning until the callback returns a truthy value
 
 *  `without(source, itemsToRemove)` : Returns a subset of a given array, removing unwanted elements
+
+The following functions have yet to be added to my npm lotide package:
+
+* `flatten(arr)`: Returns a "flattened" version of an array with up to one level of nesting
