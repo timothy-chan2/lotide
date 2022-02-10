@@ -1,5 +1,6 @@
 const assertArraysEqual = require('./assertArraysEqual');
 
+// Flattens an array with up to one level of nesting
 const flatten = (arr) => {
   const flattened = [];
 
