@@ -42,9 +42,25 @@ const assertArraysEqual = (arr1, arr2) => {
 };
 
 
-const flatten = () => {
+const flatten = (arr) => {
+  const flattened = [];
 
+  for (data of arr) {
+    if (Array.isArray(data)) {
+      for (subData of data) {
+        flattened.push(subData);
+      }
+    } else {
+      flattened.push(data);
+    }
+  }
+  return flattened;
 }
 
 // Test case
-// flatten([1, 2, [3, 4], 5, [6]]) // => [1, 2, 3, 4, 5, 6]
+flatten([1, 2, [3, 4], 5, [6]]); // => [1, 2, 3, 4, 5, 6]
+flatten([[6], [5, 4], 3, [2, 1]]); // => [6, 5, 4, 3, 2, 1]
+
+const data1 = [1, 2, [3, 4], 5, [6]];
+const results1 = flatten([1, 2, [3, 4], 5, [6]]);
+assertArraysEqual(results1, [1, 2, 3, 4, 5, 6]);
