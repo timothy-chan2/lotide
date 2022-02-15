@@ -1,3 +1,5 @@
+const assertEqual = require('./assertEqual');
+
 const findKey = (obj, cb) => {
   let kee = undefined;
 
@@ -7,15 +9,6 @@ const findKey = (obj, cb) => {
     }
   }
   return kee;
-};
-
-// Assertion test
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
 };
 
 // Test case 1
