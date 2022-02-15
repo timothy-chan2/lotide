@@ -66,3 +66,5 @@ assertArraysEqual(map(numbers, num => num * 2), [2, 8, 18]);
 // Test case 3: Plural
 const animal = ['horse', 'dog', 'sheep'];
 assertArraysEqual(map(animal, elm => elm + 's'), ['horses', 'dogs', 'sheeps']);
+
+module.exports = map;
