@@ -48,6 +48,4 @@ The following functions are currently implemented:
 
 *  `without(source, itemsToRemove)` : Returns a subset of a given array, removing unwanted elements
 
-The following functions have yet to be added to my npm lotide package:
-
 * `flatten(arr)`: Returns a "flattened" version of an array with up to one level of nesting
